@@ -657,11 +657,14 @@ border-radius: 15px;
         gap: 30px;
     }
 
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    
+   .footer-container {
+    flex-direction: column;
+    align-items: center; /* 👈 ESSA É A CHAVE */
+    text-align: center;
+}
+    .footer-col {
+    text-align: center !important;
+}
     
 }
 
@@ -676,3 +679,4 @@ border-radius: 15px;
 .footer-col:nth-child(3) {
     text-align: right;
 }
+
